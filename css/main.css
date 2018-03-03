@@ -28,7 +28,10 @@ header .top_bar:before {
 	position: absolute;
 	top: 17px;
 	left: calc(50% - 73px);
-	background: url(../img/logo.png) center center no-repeat;
+	background: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	z-index: 5;
 }
 header .top_bar nav {
@@ -69,8 +72,27 @@ header .slick_wrap {
 }
 header .slick_wrap .slider_block {
 	width: 100%;
-	height: 100%;
+	height: calc(99vh - 80px);
+	max-height: 700px;
 	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+header .slick_wrap .slider_block.first {
+	background-image: url(../img/Main/1.jpg);
+}
+header .slick_wrap .slider_block.second {
+	background-image: url(../img/Main/2.jpg);
+}
+header .slick_wrap .slider_block.third {
+	background-image: url(../img/Main/3.jpg);
+}
+header .slick_wrap .slider_block.fourth {
+	background-image: url(../img/Main/4.jpg);
+}
+header .slick_wrap .slider_block.fifth {
+	background-image: url(../img/Main/5.jpg);
 }
 header .slick_wrap .slider_block .title {
 	position: absolute;
@@ -89,26 +111,18 @@ header .slick_wrap .slider_block .title>span {
 	font-size: 70px;
 	line-height: 70px;
 }
-header .slick_wrap .slider_block img {
+/* header .slick_wrap .slider_block img {
 	width: 100%;
-	max-width: 100vw;
+	min-width: 100vw;
+	min-height: 100%;
 	position: relative;
 	top: 50%;
 	transform: translateY(-20%);
-}
+} */
 header .slick_wrap .slider_block:nth-child(2) .title {
 	text-align: left;
 	right: auto;
 	left:25%;
-}
-header .slick_wrap .slider_block:nth-child(3) img {
-	transform: translateY(-14%);
-}
-header .slick_wrap .slider_block:nth-child(4) img {
-	transform: translateY(-30%);
-}
-header .slick_wrap .slider_block:nth-child(5) img {
-	transform: translateY(-10%);
 }
 .slick-dotted.slick-slider {
 	margin-bottom: 0;
@@ -179,6 +193,7 @@ section.about h2 {
 	position: relative;
 	text-transform: uppercase;
 	color:#4a4944;
+	line-height: 46px;
 }
 section.about h2>span {
 	font-size: 60px;
@@ -189,7 +204,7 @@ section.about h2:before {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 0px;
+	bottom: -15px;
 	left: calc(50% - 90px);
 	width: 180px;
 	height: 6px;
@@ -230,9 +245,299 @@ section.about .social_links>a.email {
 }
 
 /* PORTFOLIO */
+section.portfolio {
+	background-color: #bfd1b7;
+}
+section.portfolio h2 {
+	font-size: 60px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	position: relative;
+}
+section.portfolio h2>span {
+	font-size: 60px;
+}
+section.portfolio h2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: calc(50% - 90px);
+	width: 180px;
+	height: 6px;
+	background: url(../img/underline.png) center center no-repeat;
+}
+section.portfolio>.container {
+	width: 1230px;
+}
+.portfolio_tabs {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.portfolio_tabs .tab {
+	display: inline-block;
+	padding: 0px 25px;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.5s linear;
+}
+.portfolio_tabs .tab.active {
+	background-color: #98bb95;
+}
+.portfolio_tabs .tab:last-child {
+	margin-right: 0;
+}
+section.portfolio .show {
+	margin:50px auto;
+	width: 165px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #f394b5;
+}
+section.portfolio .show>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 40px;
+	text-decoration: none;
+	text-align: center;
+}
+section.portfolio .portfolio_content {
+	width: 100%;
+}
+section.portfolio .tab_content {
+	width: 100%;
+}
+/* section.portfolio .tab_content>.top_row{
+	width: 100%;
+	height: 330px;
+	overflow:hidden;
+}
+section.portfolio .tab_content>.column {
+	display: inline-block;
+	float: left;
+	overflow:hidden;
+}
+section.portfolio .tab_content>.column.left, 
+section.portfolio .tab_content>.column.right {
+	width: 36.4%;
+	height: calc(100% - 330px);
+}
+section.portfolio .tab_content>.column.middle {
+	width: 27%;
+	height: calc(100% - 330px);
+} */
+/* section.portfolio .tab_content>.top_row>a {
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+section.portfolio .tab_content>.top_row>a.w40 {
+	width: 40%;
+}
+section.portfolio .tab_content>.top_row>a.w20 {
+	width: 20%;
+}
+section.portfolio .tab_content>.column>a {
+	display: block;
+	width: 100%;
+}
+section.portfolio .tab_content>.column>a.h30 {
+	height: 30%;
+}
+section.portfolio .tab_content>.column>a.h35 {
+	height: 35%;
+}
+section.portfolio .tab_content>.column>a.h60 {
+	height: 60%;
+}
+section.portfolio .tab_content>.column>a.h40 {
+	height: 40%;
+} */
+.tab_content_block {
+	width: 33.333333%;
+	position: relative;
+}
+a.tab_content_block:before {
+	content: '';
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	background-image: url(../img/portfolio-hover-icon.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: right bottom;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	opacity: 0;
+	pointer-events: none;
+}
+.tab_content_block:hover:before {
+	display: block;
+	opacity: 1;
+}
+.tab_content_block>img {
+	width: 100%;
+	cursor:pointer;
+}
+.tab_content {
+	visibility: hidden;
+	height: 0;!important
+}
+.tab_content.active {
+	visibility: visible;
+	height: auto;
+	min-height: 900px
+} 
+#all_content.active {
+	min-height: 2560px;
+}
+.fancybox-navigation .fancybox-button--arrow_right>svg, 
+.fancybox-navigation .fancybox-button--arrow_left>svg,
+.fancybox-navigation .fancybox-button--arrow_right:before,
+.fancybox-navigation .fancybox-button--arrow_left:before {
+	display: none;
+}
+.fancybox-navigation .fancybox-button--arrow_right {
+	background: url(../img/next-slider.png) center center no-repeat;
+}
+.fancybox-navigation .fancybox-button--arrow_left {
+	background: url(../img/prev-slider.png) center center no-repeat;
+}
 
+/* PRICE */
+section.price {
+	height: 700px;
+	background-color: #f3f3f3;
+}
+section.price h2 {
+	font-size: 60px;
+	font-family: Amatic SC;
+	color: #4a4944;
+	text-align: center;
+	position: relative;
+}
+section.price h2>span {
+	font-size: 60px;
+	font-family: Amatic SC;
+	color: #f394b5;
+}
+section.price h2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: calc(50% - 90px);
+	width: 180px;
+	height: 6px;
+	background: url(../img/underline.png) center center no-repeat;
+}
+section.price>.container>.row {
+	position: relative;
+}
+section.price .price_block{
+	width: 390px;
+	min-height: 390px;
+	background-color: #98bb95;
+	position: absolute;
+	top: 180px;
+	z-index: 2;
+	-webkit-box-shadow: 0px 20px 60px -5px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 20px 60px -5px rgba(0,0,0,.3);
+	box-shadow: 0px 20px 60px -5px rgba(0,0,0,.3);
+	padding: 15px;
+	padding-bottom: 30px;
+}
+section.price .price_block.wedding {
+	top: 210px;
+	left: calc(50% - 195px);
+	z-index: 3;
+}
+section.price .price_block.love {
+	left: calc(50% - 570px);
+}
+section.price .price_block.family {
+	left: auto;
+	right:calc(50% - 570px);
+}
+section.price .price_block .img_wrap {
+	width: 100%;
+	height: 245px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+section.price .price_block.wedding .img_wrap {
+	background-image:url(../img/wedding-price-bcg.png);
+}
+section.price .price_block.love .img_wrap {
+	background-image:url(../img/love-price-bcg.png);
+}
+section.price .price_block.family .img_wrap {
+	background-image:url(../img/family-price-bcg.png);
+}
+section.price .price_block h3 {
+	text-align: center;
+	font-size: 48px;
+	color: #4a4944;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+section.price .price_block .hid_content{
+	display: none;
+}
 
-
+section.price .price_block .hid_content h4{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 100;
+}
+section.price .price_block .hid_content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+section.price .price_block .hid_content ul li {
+	font-size: 18px;
+	color: #4a4944;
+	width: 80%;
+	margin-left: 10%;
+}
+section.price .price_block .hid_content .sum {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+section.price .price_block .slide_btn {
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	border:1px solid #4a4944;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	background:url(../img/arrow-down-price.png) center center no-repeat;
+	transition: all .5s linear;
+}
+section.price .price_block .slide_btn.rotate {
+	transform: rotateZ(180deg);
+}
 
 /* CONTACTS */
 section.contacts {
@@ -383,9 +688,468 @@ footer p {
 	font-family: MADE TheArtist Script;
 	font-size: 48px;
 	right: 20%;
-	bottom: 60px;
+	bottom: 40px;
 	color: #f394b5;
 	text-align: right;
 	margin: 0;
-	line-height: 50px;
+	line-height: 45px;
 }
+
+.mobile_nav {
+	display: none;
+}
+.mobile_btn {
+	display: none;
+}
+
+@media all and (max-width: 1280px) {
+	section.portfolio>.container {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.tab_content.active {
+		min-height: 70vw;
+	} 
+	#all_content.active {
+		min-height: 190vw;
+	}
+}
+@media all and (max-width: 1199px) {
+	header .top_bar nav {
+		margin-left: -15px;
+	}
+	section.about .img_wrap {
+		width: 350px;
+		height: 350px;
+		background-size: cover;
+	}
+	section.about .img_wrap>img {
+		width: 350px;
+		height: 350px;
+	}
+	section.about p {
+		width: 100%;
+	}
+	section.price .price_block {
+		width: 290px;
+	}
+	section.price .price_block.wedding {
+		left: calc(50% - 145px);
+	}
+	section.price .price_block.family {
+		right: calc(50% - 420px);
+	}
+	section.price .price_block.love {
+		left: calc(50% - 420px);
+	}
+	section.price .price_block .hid_content ul li {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media all and (max-width: 991px) {
+	header .top_bar nav {
+		display: none;
+	}
+	.mobile_nav {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 395px;
+		background-color: #4b4a46;
+		z-index: 1000;
+		transform: translateX(-400px);
+		transition: all .2s linear;
+	}
+	.mobile_nav.active {
+		transform: translateX(0px);
+	}
+	.mobile_nav ul {
+		margin-top: 80px;
+		padding: 0;
+		list-style: none;
+		margin-bottom: 0;
+	}
+	.mobile_nav ul li{
+		width: 100%;
+		height: 85px;
+		margin: 0;
+	}
+	.mobile_nav ul li:hover {
+		background-color: #dc92b3;
+	}
+	.mobile_nav ul li a {
+		display: block;
+		width: 100%;
+		padding-left: 20px;
+		font-size: 48px;
+		color: #fff;
+		height: 85px;
+		line-height: 96px;
+	}
+	.mobile_nav ul li a:hover, .mobile_nav ul li a:focus {
+		text-decoration: none;
+	}
+	.mobile_btn {
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 30px;
+		z-index: 1001;
+		width: 65px;
+		height: 50px;
+	}
+	.mobile_btn>span {
+		background-color: #4b4a46;
+		display: block;
+		width: 100%;
+		height: 4px;
+		margin-bottom: 19px;
+		transition: all .5s linear;
+	}
+	.mobile_btn.active>span {
+		background-color: #fff;
+	}
+	.aboutMe {
+		position: relative;
+	}
+	section.about .img_wrap {
+		position: absolute;
+		margin: 0;
+		z-index: 1;
+		top: 445px;
+		left:calc(50% - 110px);
+	}
+	section.about .social_links {
+		position: absolute;
+		z-index: 1;
+		top: 415px;
+		left: calc(50% - 225px);
+		margin: 0;
+		width: 70px;
+		height: auto;
+	}
+	section.about .social_links a {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	section.about p {
+		margin-bottom: 500px;
+		padding: 0 20px;
+	}
+	section.contacts {
+		background-position: 70% 20%;
+		position: relative;
+	}
+	section.contacts form {
+		margin-left: 50%;
+	}
+	section.contacts .contacts_wrap{
+		position: absolute;
+		top: -375px;
+		left: 28%;
+	}
+}
+@media all and (max-width: 747px) {
+	section.price .price_block {
+		width: 390px;
+	}
+	section.price .price_block.wedding {
+	    left: 10%;
+	    z-index: 5;
+	    top: 180px;
+	}
+	section.price .price_block.love {
+		top: 565px;
+		left: 40%;
+		z-index: 4;
+	}
+	section.price .price_block.family {
+		left: 10%;
+		top: 950px;
+		z-index: 3;
+	}
+	section.price {
+		height: 1420px;
+	}
+	footer p {
+		right: 5%;
+	}
+	.portfolio_tabs .tab {
+		margin-right: 0;
+		padding: 0 15px;
+	}
+}
+@media all and (max-width: 670px) {
+	section.price .price_block.love {
+		left: 30%;
+	}
+	section.contacts form {
+		margin-left: 40%;
+	}
+	section.contacts .contacts_wrap {
+		left: 15%;
+	}
+}
+@media all and (max-width: 640px) {
+	.tab_content_block {
+		width: 50%;
+	}
+}
+@media all and (max-width: 620px) {
+	header .slick_wrap {
+		height: 500px;
+	}
+	header .slick_wrap .slider_block {
+		height: 500px;
+	}
+	.mobile_btn {
+		width: 40px;
+		height: 40px;
+	}
+	.mobile_btn>span {
+		margin-bottom: 10px;
+	}
+	header .top_bar {
+		height: 65px;
+	}
+	.mobile_nav ul li a {
+		font-size: 36px;
+	}
+	header .slick_wrap .slider_block .title {
+		font-size: 48px;
+		line-height: 50px;
+		right: 20px;
+	}
+	header .slick_wrap .slider_block .title>span {
+		font-size: 48px;
+		line-height: 50px
+	}
+	header .slick_wrap .slider_block:nth-child(2) .title {
+		left: 20px;
+	}
+	header .slick_wrap .slider_block:nth-child(5) .title {
+		right: 80px;
+	}
+	.portfolio_tabs .tab {
+		padding: 0 5px;
+	}
+}
+@media all and (max-width: 573px) {
+	section.about .img_wrap {
+		top: 495px;
+	}
+	section.about .social_links {
+		top: 465px;
+	}
+	section.price .price_block.wedding, 
+	section.price .price_block.family {
+		left: 10px;
+	}
+	section.price .price_block.love {
+		left: 20%;
+	}
+	section.contacts {
+		background-position: 65%;
+		background-size: cover;
+	}
+	footer p {
+		font-size: 36px;
+	}
+	section.contacts form {
+		width: 50%;
+		float: right;
+		margin-left: 0;
+		margin-right: 40px;
+	}
+	section.contacts .contacts_wrap {
+		width: 40%;
+		margin-left: auto;
+		left: auto;
+		right: 40px;
+		top: -110px;
+	}
+}
+@media all and (max-width: 530px) {
+	section.price .price_block {
+		width: 280px;
+		min-width:280px;
+		min-height: 280px;
+	}
+	section.price .price_block .img_wrap {
+		height: 170px;
+	}
+	section.price .price_block .slide_btn {
+		bottom: 5px;
+		left: 5px;
+	}
+	section.price .price_block.love {
+		top: 463px;
+		left: auto;
+		right: 20px;
+	}
+	section.price .price_block.family {
+		top: 745px;
+		left: 20px;
+	}
+	section.price .price_block.wedding {
+		left: 20px;
+	}
+	section.price {
+		height: 1125px;
+	}
+	section.contacts .contacts_wrap a {
+		font-size: 20px;
+	}
+	.portfolio_tabs .tab {
+		font-size: 20px;
+	}
+	section.about .img_wrap {
+		width: 270px;
+		height: 270px;
+	}
+	section.about .img_wrap>img {
+		width: 270px;
+		height: 270px;
+	}
+	section.about .social_links>a {
+		width: 45px;
+		height: 45px;
+	}
+	section.about .social_links>a.vk, 
+	section.about .social_links>a.facebook,
+	section.about .social_links>a.insta,
+	section.about .social_links>a.email {
+		background-size: cover;
+	}
+	section.about .social_links {
+		width: 50px;
+		left: calc(50% - 180px);
+	}
+	section.about .img_wrap {
+		top: 535px;
+	}
+	section.about .social_links {
+		top: 515px;
+	}
+	.mobile_nav {
+		width: 280px;
+	}
+}
+@media all and (max-width: 445px) {
+	section.about .img_wrap {
+		top: 585px;
+	}
+	section.about .social_links {
+		top: 565px;
+	}
+	section.contacts .contacts_wrap {
+		width: 50%;
+		right: 0;
+	}
+	section.contacts form {
+		width: 60%;
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 416px) {
+	section.about .img_wrap {
+		top: 645px;
+	}
+	section.about .social_links {
+		top: 625px;
+	}
+	section.portfolio h2 {
+		margin-top: 30px;
+	}
+	.portfolio_tabs .tab {
+		font-size: 16px;
+	}
+	section.about h2, section.price h2, 
+	section.contacts h2 {
+		font-size: 48px;
+	}
+	section.about h2>span, section.price h2>span, 
+	section.contacts h2>span {
+		font-size: 48px;
+	}
+}
+@media all and (max-width: 375px) {
+	section.contacts {
+		background-position: 62%;
+	}
+	section.about .img_wrap>img {
+		transform: translate3d(10px, 10px, 0);
+	}
+	section.about .social_links {
+		left: calc(50% - 160px);
+	}
+	header .slick_wrap .slider_block .title, 
+	header .slick_wrap .slider_block .title>span {
+		font-size: 36px;
+	}
+	header .slick_wrap .slider_block.first {
+		background-position: 65%;
+	}
+	header .slick_wrap .slider_block.fourth {
+		background-position: 30%;
+	}
+	section.about p {
+		padding: 0;
+	}
+}
+@media all and (max-width: 355px) {
+	section.contacts form {
+		margin-right: 0;
+	}
+	footer p {
+		font-size: 28px;
+		line-height: 28px;
+	}
+	section.contacts .contacts_wrap a {
+		font-size: 16px;
+	}
+	section.contacts .contacts_wrap a:nth-child(1):before {
+		width: 20px;
+		height: 20px;
+		left: -30px;
+		background-size: cover;
+	}
+	section.contacts .contacts_wrap a:nth-child(3):before {
+		width: 20px;
+		height: 20px;
+		left: -30px;
+		background-size: cover;
+	}
+	section.about .img_wrap, section.about .img_wrap>img {
+		width: 250px;
+		height: 250px;
+	}
+	section.about .social_links {
+		top: 620px;
+		left: calc(50% - 150px);
+	}
+	.portfolio_tabs .tab {
+		font-size: 14px;
+	}
+	section.price .price_block.wedding,
+	section.price .price_block.family {
+		left: 10px;
+	}
+	section.price .price_block.love {
+		right: 10px;
+	}
+	section.contacts .contacts_wrap {
+		width: 57%;
+	}
+	section.contacts form {
+		width: 75%;
+	}
+	section.about p {
+		font-size: 22px;
+	}
+}
+
+

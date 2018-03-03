@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=cyrillic,hebrew,latin-ext" rel="stylesheet">
 	
@@ -41,38 +42,57 @@
 								<a href="#aboutMe">Обо мне</a>
 							</li>
 							<li class="bigMargin">
-								<a href="#">Портфолио</a>
+								<a href="#portfolio">Портфолио</a>
 							</li>
 							<li>
-								<a href="#">Услуги/Цена</a>
+								<a href="#price">Услуги/Цена</a>
 							</li>
 							<li>
-								<a href="#">Контакты</a>
+								<a href="#contacts">Контакты</a>
 							</li>
 						</ul>
 					</nav>
+					<div class="mobile_btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="mobile_nav">
+						<ul>
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#aboutMe">Обо мне</a>
+							</li>
+							<li>
+								<a href="#portfolio">Портфолио</a>
+							</li>
+							<li>
+								<a href="#price">Услуги/Цена</a>
+							</li>
+							<li>
+								<a href="#contacts">Контакты</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slick_wrap">
-			<div class="slider_block">
-				<img src="img/Main/1.jpg" alt="">
+			<div class="slider_block first">
 				<div class="title"><span>w</span>edding<br><span>f</span>amily<br><span>l</span>ove</div>
 			</div>
-			<div class="slider_block">
-				<img src="img/Main/2.jpg" alt="">
+			<div class="slider_block second">
 				<div class="title"><span>w</span>edding<br><span>f</span>amily<br><span>l</span>ove</div>
 			</div>
-			<div class="slider_block">
-				<img src="img/Main/3.jpg" alt="">
+			<div class="slider_block third">
 				<div class="title"><span>w</span>edding<br><span>f</span>amily<br><span>l</span>ove</div>
 			</div>
-			<div class="slider_block">
-				<img src="img/Main/4.jpg" alt="">
+			<div class="slider_block fourth">
 				<div class="title"><span>w</span>edding<br><span>f</span>amily<br><span>l</span>ove</div>
 			</div>
-			<div class="slider_block">
-				<img src="img/Main/5.jpg" alt="">
+			<div class="slider_block fifth">
 				<div class="title"><span>w</span>edding<br><span>f</span>amily<br><span>l</span>ove</div>
 			</div>
 		</div>
@@ -98,21 +118,203 @@
 		</div>
 	</section>
 <!-- PORTFOLIO -->
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<h2>Портф<span>о</span>лио</h2>
-
+				<div class="portfolio_tabs">
+					<div class="tab active" id="all_tab">Все</div>
+					<div class="tab" id="wedding_tab">Свадебные</div>
+					<div class="tab" id="family_tab">Семейные</div>
+					<div class="tab" id="love_tab">LoveStory</div>
+				</div>
+				<div class="portfolio_content">
+					<div class="tab_content active" id="all_content">
+						<!-- <div class="top_row">
+							<a href="" class="w40"></a>
+							<a href="" class="w40"></a>
+							<a href="" class="w20"></a>
+						</div>
+						<div class="column left">
+							<a href="" class="h30"></a>
+							<a href="" class="h35"></a>
+							<a href="" class="h35"></a>
+						</div>
+						<div class="column middle">
+							<a href="" class="h60"></a>
+							<a href="" class="h40"></a>
+						</div>
+						<div class="column right">
+							<a href="" class="h35"></a>
+							<a href="" class="h30"></a>
+							<a href="" class="h35"></a>
+						</div> -->
+						<div class="masonry_wrap">
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A0771-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A0771-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A2134-3.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A2134-3.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A2492.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A2492.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A3121.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A3121.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A3768-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A3768-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A5442-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A5442-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/1Y8A7930.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A7930.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Wedding/IMG_0977.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/IMG_0977.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/1Y8A2351.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A2351.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/1Y8A4582.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A4582.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/1Y8A5018-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A5018-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/1Y8A7025-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A7025-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/1Y8A8379-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A8379-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/IMG_0304.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/IMG_0304.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Family/IMG_9443вк.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/IMG_9443вк.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/1Y8A1926-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A1926-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/1Y8A2666.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A2666.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/1Y8A3715-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A3715-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/1Y8A5572-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A5572-2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/1Y8A9616.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A9616.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/IMG_4706.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/IMG_4706.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="img/Portfolio/original/Love Story/IMG_9621.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/IMG_9621.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="tab_content" id="wedding_content">
+						<div class="masonry_wrap">
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A0771-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A0771-2.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A2134-3.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A2134-3.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A2492.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A2492.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A3121.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A3121.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A3768-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A3768-2.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A5442-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A5442-2.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/1Y8A7930.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/1Y8A7930.jpg" alt=""></a>
+							<a data-fancybox="gallery1" href="img/Portfolio/original/Wedding/IMG_0977.jpg" class="tab_content_block"><img src="img/Portfolio/small/Wedding/IMG_0977.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="tab_content" id="family_content">
+						<div class="masonry_wrap">
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/1Y8A2351.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A2351.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/1Y8A4582.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A4582.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/1Y8A5018-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A5018-2.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/1Y8A7025-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A7025-2.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/1Y8A8379-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/1Y8A8379-2.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/IMG_0304.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/IMG_0304.jpg" alt=""></a>
+							<a data-fancybox="gallery2" href="img/Portfolio/original/Family/IMG_9443вк.jpg" class="tab_content_block"><img src="img/Portfolio/small/Family/IMG_9443вк.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="tab_content" id="love_content">
+						<div class="masonry_wrap">
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/1Y8A1926-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A1926-2.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/1Y8A2666.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A2666.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/1Y8A3715-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A3715-2.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/1Y8A5572-2.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A5572-2.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/1Y8A9616.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/1Y8A9616.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/IMG_4706.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/IMG_4706.jpg" alt=""></a>
+							<a data-fancybox="gallery3" href="img/Portfolio/original/Love Story/IMG_9621.jpg" class="tab_content_block"><img src="img/Portfolio/small/Love Story/IMG_9621.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="show"><a href="#">Больше фото</a></div>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
+<!-- SERVICE/PRICE -->
+	<section class="price" id="price">
+		<div class="container">
+			<div class="row">
+				<h2>Услуги<span>/</span>Цены</h2>
+				<div class="price_block love">
+					<div class="img_wrap"></div>
+					<h3>Love story</h3>
+					<div class="hid_content">
+						<h4>Минимальный</h4>
+						<ul class="description">
+							<li>-1 час фотосъёмки</li>
+							<li>- серия из фотографий 50 штук (цветокоррекция, ретушь)</li>
+							<li>-печать фото 10 штук 10*15</li>
+							<li>-фото на файлообменнике</li>
+						</ul>
+						<div class="sum">4 500р</div>
+						<h4>Максимальный</h4>
+						<ul class="description">
+							<li>-2 часа фотосьемки</li>
+							<li>-серия из фотографий 150 штук (цветокоррекция, ретушь)</li>
+							<li>-печать фото 20 штук 10*15</li>
+							<li>-фото на флешке и в фирменной упаковке</li>
+						</ul>
+						<div class="sum">8 000р</div>
+					</div>
+					<div class="slide_btn"></div>
+				</div>
+				<div class="price_block wedding">
+					<div class="img_wrap"></div>
+					<h3>Wedding day</h3>
+					<div class="hid_content">
+						<h4>Минимальный</h4>
+						<ul class="description">
+							<li>- встреча и консультация</li>
+							<li>- съемка до 4 часов</li>
+							<li>- обработанных фото 200 шт</li>
+							<li>- напечатанных фото 10шт (10х15)</li>
+							<li>- фото на диске/файлообменнике</li>
+						</ul>
+						<div class="sum">17 000р</div>
+						<h4>Оптимальный</h4>
+						<ul class="description">
+							<li>- встреча и консультация</li>
+							<li>- съемка до 8 часов</li>
+							<li>- обработанных фото 400 штук</li>
+							<li>- напечатанных фото 20шт (10х15)</li>
+							<li>- фото на флешке </li>
+							<li>- скидка 50% на Love story</li>
+						</ul>
+						<div class="sum">28 000р</div>
+						<h4>Максимальный</h4>
+						<ul class="description">
+							<li>- встреча и консультация</li>
+							<li>- съемка до 12 часов</li>
+							<li>- обработанных фото 600 штук</li>
+							<li>- напечатанных фото: 20шт (10х15) + 10шт (15х21)</li>
+							<li>- фото на флешке</li>
+							<li>- Love story в подарок</li>
+						</ul>
+						<div class="sum">35 000р</div>
+					</div>
+					<div class="slide_btn"></div>
+				</div>
+				<div class="price_block family">
+					<div class="img_wrap"></div>
+					<h3>Family story</h3>
+					<div class="hid_content">
+						<h4>Минимальный</h4>
+						<ul class="description">
+							<li>- съемка 1 час</li>
+							<li>- 15 лучших фото (цветокоррекция, ретушь) </li>
+							<li>-50-100 фото в цветокоррекции </li>
+							<li>- ссылка на файлообменник</li>
+						</ul>
+						<div class="sum">4 000р</div>
+						<h4>Оптимальный</h4>
+						<ul class="description">
+							<li>- съемка 1 час</li>
+							<li>- 25 лучших фото (цветокоррекция, ретушь)</li>
+							<li>-100-150 фото в цветокоррекции</li>
+							<li>- диск/ссылка на файлообменник</li>
+							<li>- напечатанных фото 10шт (10х15)</li>
+						</ul>
+						<div class="sum">6 000р</div>
+						<h4>Максимальный</h4>
+						<ul class="description">
+							<li>- съемка 1 час</li>
+							<li>- 35 лучших фото (цветокоррекция, ретушь)</li>
+							<li>-150-250 фото в цветокоррекции</li>
+							<li>- фото на флешке и в фирменной упаквоке</li>
+							<li>- напечатанных фото 20шт (10х15) и 5шт (13х18)</li>
+						</ul>
+						<div class="sum">9 000р</div>
+					</div>
+					<div class="slide_btn"></div>
+				</div>
+			</div>
+		</div>
+	</section>
 <!-- CONTACTS -->
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="row">
 				<h2>КОНТ<span>а</span>КТЫ</h2>
@@ -134,7 +336,6 @@
 			</div>
 		</div>
 	</section>
-
 <!-- FOOTER -->
 	<footer>
 		<div class="socialLinks">
@@ -156,6 +357,8 @@
 <script src="libs/jquery/jquery-1.11.2.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
