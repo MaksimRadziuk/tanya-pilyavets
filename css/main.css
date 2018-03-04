@@ -1044,6 +1044,9 @@ footer p {
 	.mobile_nav {
 		width: 280px;
 	}
+	section.about p {
+		margin-bottom: 420px;
+	}
 }
 @media all and (max-width: 445px) {
 	section.about .img_wrap {
@@ -1060,13 +1063,16 @@ footer p {
 		width: 60%;
 		margin-right: 20px;
 	}
+	section.about p {
+		margin-bottom: 370px;
+	}
 }
 @media all and (max-width: 416px) {
 	section.about .img_wrap {
-		top: 645px;
+		top: 605px;
 	}
 	section.about .social_links {
-		top: 625px;
+		top: 585px;
 	}
 	section.portfolio h2 {
 		margin-top: 30px;
@@ -1083,9 +1089,20 @@ footer p {
 		font-size: 48px;
 	}
 }
+@media all and (max-width: 384px) {
+	section.about .img_wrap {
+		top: 645px;
+	}
+	section.about .social_links {
+		top: 625px;
+	}
+}
 @media all and (max-width: 375px) {
 	section.contacts {
 		background-position: 62%;
+	}
+	section.about .img_wrap {
+		top: 605px;
 	}
 	section.about .img_wrap>img {
 		-webkit-transform: translate3d(10px, 10px, 0);
@@ -1093,6 +1110,7 @@ footer p {
 	}
 	section.about .social_links {
 		left: calc(50% - 160px);
+		top: 585px;
 	}
 	header .slick_wrap .slider_block .title, 
 	header .slick_wrap .slider_block .title>span {
@@ -1135,8 +1153,11 @@ footer p {
 		width: 250px;
 		height: 250px;
 	}
+	section.about .img_wrap {
+		top: 565px;
+	}
 	section.about .social_links {
-		top: 620px;
+		top: 540px;
 		left: calc(50% - 150px);
 	}
 	.portfolio_tabs .tab {
@@ -1157,6 +1178,11 @@ footer p {
 	}
 	section.about p {
 		font-size: 22px;
+	}
+}
+@media all and (max-width: 339px) {
+	section.about p {
+		margin-bottom: 320px;
 	}
 }
 

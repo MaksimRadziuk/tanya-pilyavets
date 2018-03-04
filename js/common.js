@@ -26,9 +26,11 @@ $(document).ready(function() {
     });
 
 
-    $('.masonry_wrap').masonry({
-      itemSelector: '.tab_content_block',
-      columnWidth: '.tab_content_block'
+    $('.masonry_wrap a img').load(function(){
+        $('.masonry_wrap').masonry({
+          itemSelector: '.tab_content_block',
+          columnWidth: '.tab_content_block'
+        });
     });
 
     $('#all_tab').click(function(){
@@ -85,3 +87,4 @@ $(document).ready(function() {
     
 
 });
+
